@@ -20,7 +20,7 @@ const add = (req, res) => {
   models.characters
     .insert(character)
     .then(([result]) => {
-      res.json({ id: result.insertId, ...character }).sendStatus(201)
+      res.status(201).json({ id: result.insertId, ...character })
     })
     .catch((err) => {
       console.error(err)

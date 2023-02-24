@@ -1,0 +1,36 @@
+.number-input {
+  background-color: black;
+  border: 1px solid #896c3c;
+  color: #896c3c;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 4px;
+  width: 30px;
+}
+input:focus {
+  outline: none;
+}
+.landHouseAddPoint {
+  display: flex;
+}
+.landHouseAddButton {
+  margin-left: 10px;
+  background-color: black;
+  border: 2px solid #896c3c;
+  color: #896c3c;
+  font-weight: bold;
+  cursor: pointer;
+}
+.number-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  background-color: #896c3c;
+  border: none;
+  color: black;
+}
+
+.number-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  background-color: #896c3c;
+  border: none;
+  color: black;
+}
