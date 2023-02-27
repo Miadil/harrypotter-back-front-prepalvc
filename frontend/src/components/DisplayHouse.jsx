@@ -2,7 +2,7 @@ import { useState } from "react"
 
 import "./DisplayHouse.css"
 
-const DisplayHouse = ({ id, houseName, housePoint }) => {
+const DisplayHouse = ({ id, houseName, housePoint, addOrRemovePoint }) => {
   const [nbPoint, setNbPoint] = useState("0")
 
   return (
@@ -20,6 +20,7 @@ const DisplayHouse = ({ id, houseName, housePoint }) => {
             type="button"
             className="landHouseAddButton"
             value={nbPoint > 0 ? `+ ${nbPoint}` : `${nbPoint}`}
+            onClick={() => addOrRemovePoint(id, nbPoint)}
           />
         ) : (
           ""
